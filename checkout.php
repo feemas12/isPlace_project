@@ -15,10 +15,10 @@ $charge = OmiseCharge::create(array(
 
 if ($charge['status'] == 'successful') {
   echo 'Success';
-  header('Location: check.html');
+  header('Location: paypass.html');
 } else {
   echo 'Fail';
-  header('Location: index.html');
+  header('Location: payerror.html');
 }
 
 // print('<pre>');
